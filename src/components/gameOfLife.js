@@ -42,7 +42,7 @@ class GameOfLife extends React.Component {
         for(var r = 0; r < this.state.grid.length ; r++) {
             for(var c = 0; c < this.state.grid[r].length; c++) {
                 var lifeCount = 0;
-                var isAlive = this.state.grid[r][c] == 1;
+                var isAlive = this.state.grid[r][c] === 1;
                 
                 if(r > 0 && c > 0)
                     lifeCount+=this.state.grid[r-1][c-1];
@@ -81,20 +81,23 @@ class GameOfLife extends React.Component {
     }
     render() {
         var pct = String(100/this.state.grid[0].length).concat("%")
+        var gridNum=0;
         return (
-            <table class="life-table">
+            <table className="life-table">
                 <tbody>
                 {
                     this.state.grid.map(function(gd) {
                         var cells = gd.map(function(cell) {
                             var clas = "cell-"+Number(cell)
+                            gridNum+=1;
                             return (
-                                <td class={clas}  style= {{width:pct, paddingTop: pct }}></td>
+                                <td className={clas} style= {{width:pct, paddingTop: pct }} key={gridNum}></td>
                             )
                         });
                         console.log("tr")
+                        gridNum+=1;
                         return (
-                            <tr>
+                            <tr key={gridNum}>
                                 {cells}
                             </tr>
                         )
