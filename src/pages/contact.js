@@ -8,6 +8,7 @@ const Contact = () => (
     <SEO title="Contact" />
     <h2 ><a href="https://github.com/bbarrett11">Github</a> </h2>
     <h2><a href="https://www.linkedin.com/in/benjamin-barrett-743028171/">LinkedIn</a></h2>
+    <h2>Email:</h2>bjb2us@virginia.edu
   </Layout>
 )
 
