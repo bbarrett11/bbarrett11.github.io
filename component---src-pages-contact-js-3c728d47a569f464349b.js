@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{215:function(e,t,n){"use strict";n.r(t);var a=n(0),r=n.n(a),l=n(211),c=n(210);n(212);t.default=function(){return r.a.createElement(l.a,null,r.a.createElement(c.a,{title:"Contact"}),r.a.createElement("h2",null,r.a.createElement("a",{href:"https://github.com/bbarrett11"},"Github")," "),r.a.createElement("h2",null,r.a.createElement("a",{href:"https://www.linkedin.com/in/benjamin-barrett-743028171/"},"LinkedIn")))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-3c728d47a569f464349b.js.map
