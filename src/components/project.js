@@ -21,7 +21,7 @@ class Project extends Component {
                 </div>
             </div>
             <div style={{height:"100%",width:"33.3333%",border:"1px solid black",display:"inline-block",verticalAlign:"top",position:"relative"}}>
-            <Image filename={pic} alt="test image" />
+            <Image imgStyle={{ objectFit: 'contain',height:'98px'}} filename={pic} alt="test image" />
             </div>
             <div style={{height:"100%",width:"33.3333%",display:"inline-block",verticalAlign:"top"}}>
                 <div style={{border:"1px solid black",height:"50%",textAlign:"center"}}>

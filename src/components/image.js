@@ -25,7 +25,7 @@ const Image = props => (
               relativePath
               name
               childImageSharp {
-                fluid(maxWidth: 600) {
+                fluid(maxWidth:300) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -43,9 +43,10 @@ const Image = props => (
       }
 
       //const imageSizes = image.node.childImageSharp.sizes; sizes={imageSizes}
-      return <Img imgStyle={{height:"96px",width:"auto",margin:"0 auto"}} alt={props.alt} fluid={image.node.childImageSharp.fluid}/>;
+      return <Img style = {props.style} imgStyle={props.imgStyle} alt={props.alt} fluid={image.node.childImageSharp.fluid}/>;
     }}
   />
 );
+
 
 export default Image;
